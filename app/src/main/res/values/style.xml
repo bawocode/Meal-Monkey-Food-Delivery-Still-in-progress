@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tool_bar_text">
+        <item name="fontFamily">@font/cabin_bold2</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

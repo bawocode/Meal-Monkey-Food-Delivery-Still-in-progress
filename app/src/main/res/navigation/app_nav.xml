@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/signUpAndLoginFragment">
+
+    <fragment
+        android:id="@+id/signUpAndLoginFragment"
+        android:name="com.bawonelson.fooddeliveryapp.ui.fragment.SignUpAndLoginFragment"
+        android:label="fragment_sign_up_and_login"
+        tools:layout="@layout/fragment_sign_up_and_login" >
+        <action
+            android:id="@+id/action_signUpAndLoginFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUpAndLoginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.bawonelson.fooddeliveryapp.ui.fragment.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signUpAndLoginFragment"
+            app:destination="@id/signUpAndLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.bawonelson.fooddeliveryapp.ui.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpAndLoginFragment"
+            app:destination="@id/signUpAndLoginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeScreenOneFragment"
+            app:destination="@id/welcomeScreenOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreenOneFragment"
+        android:name="com.bawonelson.fooddeliveryapp.ui.fragment.WelcomeScreenOneFragment"
+        android:label="fragment_welcome_screen_one"
+        tools:layout="@layout/fragment_welcome_screen_one" >
+        <action
+            android:id="@+id/action_welcomeScreenOneFragment_to_welcomeScreenTwoFragment"
+            app:destination="@id/welcomeScreenTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreenTwoFragment"
+        android:name="com.bawonelson.fooddeliveryapp.ui.fragment.WelcomeScreenTwoFragment"
+        android:label="fragment_welcome_screen_two"
+        tools:layout="@layout/fragment_welcome_screen_two" >
+        <action
+            android:id="@+id/action_welcomeScreenTwoFragment_to_welcomeScreenThreeFragment"
+            app:destination="@id/welcomeScreenThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreenThreeFragment"
+        android:name="com.bawonelson.fooddeliveryapp.ui.fragment.WelcomeScreenThreeFragment"
+        android:label="fragment_welcome_screen_three"
+        tools:layout="@layout/fragment_welcome_screen_three" >
+        <action
+            android:id="@+id/action_welcomeScreenThreeFragment_to_homeScreenActivity"
+            app:destination="@id/homeScreenActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/homeScreenActivity"
+        android:name="com.bawonelson.fooddeliveryapp.ui.activity.HomeScreenActivity"
+        android:label="activity_home_screen"
+        tools:layout="@layout/activity_home_screen" />
+</navigation>

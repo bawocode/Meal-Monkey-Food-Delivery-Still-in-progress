@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Menu" android:icon="@drawable/ic_menu_icon" android:id="@+id/menu"/>
+    <item android:title="Offers" android:icon="@drawable/ic_baseline_shopping_bag_24" android:id="@+id/offers"/>
+    <item android:id="@+id/placeholder" android:title=""/>
+    <item android:title="Profile" android:icon="@drawable/ic_baseline_person_24" android:id="@+id/profile"/>
+    <item android:title="More" android:icon="@drawable/ic_baseline_menu_open_24" android:id="@+id/more"/>
+
+
+
+
+</menu>

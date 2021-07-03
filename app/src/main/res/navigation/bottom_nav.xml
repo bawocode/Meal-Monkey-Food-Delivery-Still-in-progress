@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/homeOfMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.bawonelson.fooddeliveryapp.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" />
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.bawonelson.fooddeliveryapp.OffersFragment"
+        android:label="fragment_offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.bawonelson.fooddeliveryapp.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.bawonelson.fooddeliveryapp.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+    <fragment
+        android:id="@+id/homeOfMenuFragment"
+        android:name="com.bawonelson.fooddeliveryapp.HomeOfMenuFragment"
+        android:label="fragment_home_of_menu"
+        tools:layout="@layout/fragment_home_of_menu" />
+</navigation>
